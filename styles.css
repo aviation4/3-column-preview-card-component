@@ -34,7 +34,7 @@ img {
 
 
 
-/******* Cards styling *******/
+/******* Cards *******/
 
 .card-set {
   display: flex;
@@ -84,7 +84,7 @@ img {
 
 
 
-/*** Specyfing button styling ***/
+/*** Specified button styling ***/
 
 .sedans .button {
   color: hsl(31, 77%, 52%);
