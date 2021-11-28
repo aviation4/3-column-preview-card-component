@@ -1,3 +1,6 @@
+
+/****** Global styling ******/
+
 * {
   box-sizing: border-box;
 }
@@ -29,57 +32,18 @@ img {
   width: 70px;
 }
 
-.card {
-  padding: 3rem;
-}
 
-.button {
-  display: inline-block;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  background-color: hsl(0, 0%, 95%);
-  border: 1px solid hsl(0, 0%, 95%);
-  border-radius: 26px;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  margin: 20px 0;
-  transition: 0.5s;
-}
 
-.sedans .button {
-  color: hsl(31, 77%, 52%);
-}
-
-.sedans .button:active {
-  background-color: hsl(31, 77%, 52%);
-  color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
-
-.suvs .button {
-  color: hsl(184, 100%, 22%);
-}
-
-.suvs .button:active {
-  background-color: hsl(184, 100%, 22%);
-  color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
-
-.luxury .button {
-  color: hsl(179, 100%, 13%);
-}
-
-.luxury .button:active {
-  background-color: hsl(179, 100%, 13%);
-  color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
+/******* Cards styling *******/
 
 .card-set {
   display: flex;
   flex-direction: column;
   margin: 40px 10%;
+}
+
+.card {
+  padding: 3rem;
 }
 
 .sedans {
@@ -97,6 +61,60 @@ img {
 }
 
 
+
+/****** Buttons ******/
+
+.button {
+  display: inline-block;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 26px;
+  padding: 1rem 2rem;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.button:active {
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+
+
+/*** Specyfing button styling ***/
+
+.sedans .button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans .button:active {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs .button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs .button:active {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury .button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury .button:active {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+
+/****** Media Queries ******/
+
+/*** Mobile states ***/
 
 @media (hover:hover){
   .sedans .button:hover {
@@ -120,11 +138,14 @@ img {
 
 
 
+/*** Screen sizing ***/
+
 @media (min-width: 700px){
   .card {
     max-width: 557px;
   }
 }
+
 
 @media (min-width: 1200px)  {
   body {
