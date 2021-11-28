@@ -30,7 +30,6 @@ img {
 }
 
 .card {
-  width: 350px;
   padding: 3rem;
 }
 
@@ -51,7 +50,7 @@ img {
   color: hsl(31, 77%, 52%);
 }
 
-.sedans .button:hover {
+.sedans .button:active {
   background-color: hsl(31, 77%, 52%);
   color: hsl(0, 0%, 95%);
   cursor: pointer;
@@ -61,7 +60,7 @@ img {
   color: hsl(184, 100%, 22%);
 }
 
-.suvs .button:hover {
+.suvs .button:active {
   background-color: hsl(184, 100%, 22%);
   color: hsl(0, 0%, 95%);
   cursor: pointer;
@@ -71,7 +70,7 @@ img {
   color: hsl(179, 100%, 13%);
 }
 
-.luxury .button:hover {
+.luxury .button:active {
   background-color: hsl(179, 100%, 13%);
   color: hsl(0, 0%, 95%);
   cursor: pointer;
@@ -80,7 +79,7 @@ img {
 .card-set {
   display: flex;
   flex-direction: column;
-  margin: 4rem;
+  margin: 40px 10%;
 }
 
 .sedans {
@@ -97,13 +96,59 @@ img {
   border-radius: 0 0 15px 15px;
 }
 
-@media (min-width: 1208px)  {
-  .card-set {
-    flex-direction: row;
+
+
+@media (hover:hover){
+  .sedans .button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+  }
+
+  .suvs .button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+  }
+
+  .luxury .button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
   }
 }
 
-footer {
-  height: 1px;
-  width: 1px;
+
+
+@media (min-width: 700px){
+  .card {
+    max-width: 557px;
+  }
+}
+
+@media (min-width: 1200px)  {
+  body {
+    height: 100vh;
+  }
+
+  .card-set {
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sedans {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
+  }
 }
